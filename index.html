@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Touch nums</title>
+</head>
+<h1>Touch Nums🔢</h1>
+<body onload="init()">
+  <div class="box">
+    <h3>Pick Difficulty</h3>
+    <form>
+      <input
+       onclick="changeLevel(this)"
+       type="radio"
+       value ="16"
+       name="level"
+       checked = "checked"
+      >
+      <label>16(Easy)</label>
+
+      <input
+       onclick="changeLevel(this)"
+       type="radio"
+       value ="25"
+       name="level"
+      >
+      <label>25(Medium)</label>
+
+      <input
+       onclick="changeLevel(this)"
+       type="radio"
+       value ="36"
+       name="level"
+      >
+      <label>36(Hard)</label>
+      <br>
+      <input
+       onclick="changeLevel(this)"
+       type="radio"
+       value ="64"
+       name="level"
+      >
+      <label>64(⛔⛔)</label>
+      
+      <button onclick="init()">Restart</button>
+    </form>
+    <div class="box">
+      Timer: <br>
+      <div class="timer">
+      
+        00:00:000
+      </div>
+      
+    </div>
+  </div>
+ <table>
+<tbody class="board">
+    
+    
+
+  </tbody>
+ </table>
+
+
+ <script src="js/main.js"></script>
+</body>
+</html>
